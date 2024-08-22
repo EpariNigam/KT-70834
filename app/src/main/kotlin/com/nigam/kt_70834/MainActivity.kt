@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                 ).type
             )
         } catch (ex: Exception) {
+            Log.d(TAG, "getAppsflyerConversionData: $ex")
             emptyMap()
         }
     }
@@ -84,6 +85,7 @@ class MainActivity : AppCompatActivity() {
             )
             response
         } catch (ex: Exception) {
+            Log.d(TAG, "getAppsflyerConversionData: $ex")
             emptyMap()
         }
     }
